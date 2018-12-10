@@ -22,9 +22,9 @@ const myArray = {
     array: [1, 2, 3],
 
     // forEachメソッド
-    forEach: (callback) => {
-        for(var i = 0; i < myArray.array.length; i++) {
-            callback(myArray.array[i], i)
+    forEach: function(callback) {
+        for(var i = 0; i < this.array.length; i++) {
+            callback(this.array[i], i)
         }
     },
 
